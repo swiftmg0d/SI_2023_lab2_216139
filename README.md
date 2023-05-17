@@ -20,6 +20,10 @@
 > D =  SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))) 
 > ````
 > ![table](./table.png)
+> - Првиот тест е наменет соодветно за
+> -
+> -
+> -
 
 <hr></hr>
 
@@ -63,7 +67,7 @@
  | T T F	| NOT |	NOT |
  | T F T	| NOT |	NOT |
  | F T T	| NOT |	NOT |
-> **Доколку во поле се сретне _NOT_ тоа означува дека таа комбинација не е можна согласно зададената задача!**
+ **Доколку во поле се сретне _NOT_ тоа означува дека таа комбинација не е можна согласно зададената задача!**
 > ```
 >  @Test
 >   void  multipleConcitionTestV1(){
