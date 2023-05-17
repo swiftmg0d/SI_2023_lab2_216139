@@ -19,11 +19,11 @@
 > C =  SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))) 
 > D =  SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))) 
 > ````
-> ![table](./table.png)
-> - Првиот тест е наменет соодветно за
-> -
-> -
-> -
+![table](./table.png)
+ - Првиот тест е наменет соодветно за
+ -
+ -
+ -
 
 > ```
 > class SILab2Test {
