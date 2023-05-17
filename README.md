@@ -53,28 +53,30 @@
 > A =  SILab2.function(null, new ArrayList<>()) 
 > B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
 > ````
-A	B
-T T T	*	
-F F F		*
-T F F	NOT	NOT
-F F T	NOT	NOT
-F T F	NOT	NOT
-T T F	NOT	NOT
-T F T	NOT	NOT
-F T T	NOT	NOT
-Доколку во поле се сретне NOT тоа означува дека таа комбинација не е можна согласно зададената задача!
-
- @Test
-   void  multipleConcitionTestV1(){
-       RuntimeException exception=assertThrows(RuntimeException.class, ()->{
-          SILab2.function(null,new ArrayList<>());
-       });
-       assertEquals("Mandatory information missing!", exception.getMessage());
-
-   }
-   @Test
-   void  multipleConcitionTestV2(){
-       assertDoesNotThrow(()->{
-           SILab2.function(new User("Predrag","Mitkov12345","predrag_mitkov@gmail.com"),new ArrayList<>());
-       });
-   }
+> | A | 	B | 
+> | :---------- | ---------- |   ---------- | 
+> T T T |	* |	
+> F F F	|	  | *
+> T F F	| NOT | 	NOT
+> F F T	| NOT |	NOT
+> F T F	| NOT |	NOT
+> T T F	| NOT |	NOT
+> T F T	| NOT |	NOT
+> F T T	| NOT |	NOT
+> **Доколку во поле се сретне _NOT_ тоа означува дека таа комбинација не е можна согласно зададената задача!**
+> ```
+>  @Test
+>   void  multipleConcitionTestV1(){
+>       RuntimeException exception=assertThrows(RuntimeException.class, ()->{
+>          SILab2.function(null,new ArrayList<>());
+>       });
+>       assertEquals("Mandatory information missing!", exception.getMessage());
+>
+>   }
+>   @Test
+>   void  multipleConcitionTestV2(){
+>       assertDoesNotThrow(()->{
+>          SILab2.function(new User("Predrag","Mitkov12345","predrag_mitkov@gmail.com"),new ArrayList<>());
+>       });
+>   }
+> ````
