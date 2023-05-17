@@ -13,7 +13,7 @@
 > D = new User(Kalu, kafanska pjevacica@, kalu.dragoliev@gmail.com ), new List.of(new User(Predrag, desamsinocbio@, predrag.petkov@gmail.com ) <br>
 > A | B | C | D
 > ---|---|---|---
-> * | | |
+> * |  |  |
 > | * | * | *
 > * | | |
 > NOT | NOT | NOT |
