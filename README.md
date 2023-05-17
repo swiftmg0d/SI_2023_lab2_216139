@@ -55,14 +55,14 @@
 > ````
 > | A | 	B | 
 > | :---------- | ---------- |   ---------- | 
-> T T T |	* |	
-> F F F	|	  | *
-> T F F	| NOT | 	NOT
-> F F T	| NOT |	NOT
-> F T F	| NOT |	NOT
-> T T F	| NOT |	NOT
-> T F T	| NOT |	NOT
-> F T T	| NOT |	NOT
+> | T T T |	* |  |	
+> | F F F	|	  | * |
+> | T F F	| NOT | NOT |
+> | F F T	| NOT |	NOT |
+> | F T F	| NOT |	NOT |
+> | T T F	| NOT |	NOT |
+> | T F T	| NOT |	NOT |
+> | F T T	| NOT |	NOT |
 > **Доколку во поле се сретне _NOT_ тоа означува дека таа комбинација не е можна согласно зададената задача!**
 > ```
 >  @Test
