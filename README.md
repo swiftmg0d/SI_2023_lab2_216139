@@ -53,31 +53,16 @@
 > A =  SILab2.function(null, new ArrayList<>()) 
 > B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
 > ````
-
-|       | A | B |
-| :---------- | ---------- | ---------- | 
-| T T T | * | * | * | * |
-| F F F    | * |   |   |   |
-| T F F  | * |   |   |   |
-| F F T  |   | * | * | * |
-| F F T  |   | * |   |   |
-| F T F |   | * |   |   |
-| T T F |   |   | * | * |
-| F T T  |   |   | * | * |
-| T F T    |   |   | * | * |
-
-
-
-> | | A | 	B | 
-> | :---------- | ---------- |   ---------- | 
-> | T T T |	* |  |	
-> | F F F	|	  | * |
-> | T F F	| NOT | NOT |
-> | F F T	| NOT |	NOT |
-> | F T F	| NOT |	NOT |
-> | T T F	| NOT |	NOT |
-> | T F T	| NOT |	NOT |
-> | F T T	| NOT |	NOT |
+ | | A | 	B | 
+ | :---------- | ---------- |   ---------- | 
+ | T T T |	* |  |	
+ | F F F	|	  | * |
+ | T F F	| NOT | NOT |
+ | F F T	| NOT |	NOT |
+ | F T F	| NOT |	NOT |
+ | T T F	| NOT |	NOT |
+ | T F T	| NOT |	NOT |
+ | F T T	| NOT |	NOT |
 > **Доколку во поле се сретне _NOT_ тоа означува дека таа комбинација не е можна согласно зададената задача!**
 > ```
 >  @Test
