@@ -13,4 +13,62 @@
 
 
 > **3. Every-branch** <br>
+> ```
+> A =  SILab2.function(null, new ArrayList<>())  
+> B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
+> C =  SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))) 
+> D =  SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))) 
+> ````
 > ![table](./table.png)
+
+
+4. Тестови
+
+class SILab2Test {
+
+   @Test
+   void exceptionTest() {
+       RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+           SILab2.function(null, new ArrayList<>());
+       });
+       assertEquals("Mandatory information missing!", exception.getMessage());
+
+   }
+
+   @Test
+   void loopTest() {
+       assertFalse(SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()));
+       assertFalse(SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))));
+       assertFalse(SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))));
+   }
+}
+
+5. Multiple Condition
+
+A =  SILab2.function(null, new ArrayList<>()) 
+B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
+A	B
+T T T	*	
+F F F		*
+T F F	NOT	NOT
+F F T	NOT	NOT
+F T F	NOT	NOT
+T T F	NOT	NOT
+T F T	NOT	NOT
+F T T	NOT	NOT
+Доколку во поле се сретне NOT тоа означува дека таа комбинација не е можна согласно зададената задача!
+
+ @Test
+   void  multipleConcitionTestV1(){
+       RuntimeException exception=assertThrows(RuntimeException.class, ()->{
+          SILab2.function(null,new ArrayList<>());
+       });
+       assertEquals("Mandatory information missing!", exception.getMessage());
+
+   }
+   @Test
+   void  multipleConcitionTestV2(){
+       assertDoesNotThrow(()->{
+           SILab2.function(new User("Predrag","Mitkov12345","predrag_mitkov@gmail.com"),new ArrayList<>());
+       });
+   }
