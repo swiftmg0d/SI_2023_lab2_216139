@@ -7,7 +7,7 @@
 > Согласно формулата: Цикломатската комплексност = број на предикатни јазли + 1 <br>
 > Цикломатската комплексност = 11 <br>
 
-> Item | Price | # In stock
+> [ null. New ArrayList()<> ] | [ User(kalu, kalu123, kalugmailcom ), new ArrayList() ] | [ User(Kalu, kafanskapjevacica, kalu.dragoliev@gmail.com ), new List.of( new User(Kalu, kafanskapjevacica, kalu.dragoliev@gmail.com ) ] | [ User(Kalu, kafanska pjevacica@, kalu.dragoliev@gmail.com ), new List.of(new User(Predrag, desamsinocbio@, predrag.petkov@gmail.com ) ] 
 > ---|---|---
 > Juicy Apples | 1.99 | 739
 > Bananas | 1.89 | 6
