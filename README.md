@@ -53,6 +53,21 @@
 > A =  SILab2.function(null, new ArrayList<>()) 
 > B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
 > ````
+
+|       | A | B |
+| :---------- | ---------- | ---------- | 
+| T T T | * | * | * | * |
+| F F F    | * |   |   |   |
+| T F F  | * |   |   |   |
+| F F T  |   | * | * | * |
+| F F T  |   | * |   |   |
+| F T F |   | * |   |   |
+| T T F |   |   | * | * |
+| F T T  |   |   | * | * |
+| T F T    |   |   | * | * |
+
+
+
 > | A | 	B | 
 > | :---------- | ---------- |   ---------- | 
 > | T T T |	* |  |	
