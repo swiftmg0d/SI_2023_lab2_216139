@@ -21,32 +21,38 @@
 > ````
 > ![table](./table.png)
 
+<hr></hr>
 
-4. Тестови
 
-class SILab2Test {
+> **4. Тестови**
+> ```
+> class SILab2Test {
+>
+>   @Test
+>   void exceptionTest() {
+>       RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+>           SILab2.function(null, new ArrayList<>());
+>       });
+>       assertEquals("Mandatory information missing!", exception.getMessage());
+>
+>   }
+>
+>   @Test
+>   void loopTest() {
+>       assertFalse(SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()));
+>       assertFalse(SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))));
+>       assertFalse(SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))));
+>   }
+> }
+> ```
 
-   @Test
-   void exceptionTest() {
-       RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-           SILab2.function(null, new ArrayList<>());
-       });
-       assertEquals("Mandatory information missing!", exception.getMessage());
+<hr></hr>
 
-   }
-
-   @Test
-   void loopTest() {
-       assertFalse(SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()));
-       assertFalse(SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))));
-       assertFalse(SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))));
-   }
-}
-
-5. Multiple Condition
-
-A =  SILab2.function(null, new ArrayList<>()) 
-B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
+> **5. Multiple Condition**
+> ```
+> A =  SILab2.function(null, new ArrayList<>()) 
+> B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
+> ````
 A	B
 T T T	*	
 F F F		*
