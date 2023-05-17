@@ -11,7 +11,7 @@
 > B = new User(Kalu, kafanska pjevacica@, kalu.dragoliev@gmail.com ), new List.of(new User(Predrag, desamsinocbio@, predrag.petkov@gmail.com ) <br>
 > C = new User(Kalu, kafanskapjevacica, kalu.dragoliev@gmail.com ), new List.of( new User(Kalu, kafanskapjevacica, kalu.dragoliev@gmail.com ) <br>
 > D = new User(Kalu, kafanska pjevacica@, kalu.dragoliev@gmail.com ), new List.of(new User(Predrag, desamsinocbio@, predrag.petkov@gmail.com ) <br>
-> Item | Price | # In stock
+> A | B | C | D
 > ---|---|---
-> Juicy Apples | 1.99 | 739
-> Bananas | 1.89 | 6
+> Juicy Apples | 1.99 | 739 |
+> Bananas | 1.89 | 6 |
