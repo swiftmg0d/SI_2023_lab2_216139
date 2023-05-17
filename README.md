@@ -25,10 +25,6 @@
 > -
 > -
 
-<hr></hr>
-
-
-> **4. Тестови**
 > ```
 > class SILab2Test {
 >
@@ -52,7 +48,7 @@
 
 <hr></hr>
 
-> **5. Multiple Condition**
+> **4. Multiple Condition**
 > ```
 > A =  SILab2.function(null, new ArrayList<>()) 
 > B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
