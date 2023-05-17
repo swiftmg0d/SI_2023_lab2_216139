@@ -22,7 +22,8 @@ class SILab2Test {
     void loopTest() {
         assertFalse(SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()));
         assertFalse(SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))));
-        assertFalse(SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))));
+        assertFalse(SILab2.function(new User("kalu", "kafanskapjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))));
+        assertFalse(SILab2.function(new User("kalu", "kakosibre kakosibre", "kalugmailcom"), new ArrayList<>()));
     }
 
     @Test

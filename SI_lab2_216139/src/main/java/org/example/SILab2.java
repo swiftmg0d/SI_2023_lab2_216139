@@ -46,7 +46,7 @@ public class SILab2 {
         int same = 1; // 6
         if (user.getEmail().contains("@") && user.getEmail().contains(".")) {  // 7
             same = 0; // 8
-            for (int i=0;i<allUsers.size();i++) {  // 9  = [ 9.1 - int i=0; 9.2 - i<allUsers.size() ; 9.3 - i++]
+            for (int i=0;i<allUsers.size();i++)  {  // 9  = [ 9.1 - int i=0; 9.2 - i<allUsers.size() ; 9.3 - i++]
                 User existingUser = allUsers.get(i); // 10
                 if (existingUser.getEmail() == user.getEmail()) { // 11
                     same += 1; // 12

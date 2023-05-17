@@ -17,13 +17,14 @@
 > A =  SILab2.function(null, new ArrayList<>())  
 > B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
 > C =  SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))) 
-> D =  SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))) 
+> D =  SILab2.function(new User("kalu", "kafanskapjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))) 
 > ````
 > ![table](./table.png)
-> - Првиот тест е наменет соодветно за
->  -
-> -
-> -
+> - Првиот тест е наменет соодветно за exception-от за реброто 2 -> 3
+> - Вториот тест е наменет соодветно за да не влези во  првиот for-loop-от, односно да отиде од јазол 7 во јазол 16,17,18 и соодветно ќе заврши во реброто 19 - > 20
+> - Третиот тест е наменет соодветно за да влези во првиот for-loop-от каде ќе ги помине ребрата 11 -> 12, 13 -> 14  ќе влези во вториот for-loop и соодветно ќе заврши во јазолот 27
+> - Четвртиот тест е наменет соодветно за да влези во првиот for-loop-от каде Нема да  ги помине ребрата 11 -> 12, 13 -> 14  ќе влези во вториот for-loop и соодветно ќе заврши во јазолот 25
+> - Петиот тест е наменет соодветно за да го помине реброто  22 -> 27
 > ```
 > class SILab2Test {
 >
@@ -40,7 +41,9 @@
 >   void loopTest() {
 >       assertFalse(SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()));
 >       assertFalse(SILab2.function(new User("kalu", "kafanskapjevacica", "kalu.dragoliev@gmail.com"), List.of(new User("kalu", "kafanskajevacica", "kalu.dragoliev@gmail.com"))));
->       assertFalse(SILab2.function(new User("kalu", "kafanska pjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))));
+>       assertFalse(SILab2.function(new User("kalu", "kafanskapjevacica@", "kalu.dragoliev@gmail.com"), List.of(new User("Predrag", "desambiosinoc", "predrag.petkov@gmail.com"))));
+        assertFalse(SILab2.function(new User("kalu", "kakosibre kakosibre", "kalugmailcom"), new ArrayList<>()));
+
 >   }
 > }
 > ```
