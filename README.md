@@ -53,37 +53,49 @@
 > **4. Multiple Condition**
 > ```
 > A =  SILab2.function(null, new ArrayList<>()) 
-> B =  SILab2.function(new User("kalu", "kalu123", "kalugmailcom"), new ArrayList<>()) 
-> C =
-> D=
+> B =  SILab2.function(new User("Predrag","Mitkov12345","predrag_mitkov@gmail.com"),new ArrayList<>());
+> C =  SILab2.function(new User("Predrag",null,"predrag_mitkov@gmail.com"),new ArrayList<>());
+> D=   SILab2.function(new User("Predrag","Mitkov12345",null),new ArrayList<>());
 > ````
  | | A | 	B | C | D |
  | :---------- | ---------- |   ---------- | ---------- |   ---------- | 
- | T T T |	* |  |	 | |
+ | T X X |	* |  |	 | |
  | F F F	|	  | * | | |
- | T F F	| NOT | NOT | | |
- | F F T	| NOT |	NOT | | |
- | F T F	| NOT |	NOT | | |
- | T T F	| NOT |	NOT | | |
- | T F T	| NOT |	NOT | | |
- | F T T	| NOT |	NOT | | |
+ | F T X	|  |  | * | |
+ | F F T	|  |	 | | * |
  
- **Доколку во поле се сретне _NOT_ тоа означува дека таа комбинација не е можна согласно зададената задача!**
+ 
+ **Доколку во поле се сретне _X_ тоа означува дека таа комбинација не е битна, односно може да биде Т или F.**
 > ```
->  @Test
->   void  multipleConcitionTestV1(){
->       RuntimeException exception=assertThrows(RuntimeException.class, ()->{
->          SILab2.function(null,new ArrayList<>());
->       });
->       assertEquals("Mandatory information missing!", exception.getMessage());
+> @Test
+>    void  multipleConcitionTestV1(){
+>        RuntimeException exception=assertThrows(RuntimeException.class, ()->{
+>            SILab2.function(null,new ArrayList<>());
+>        });
+>        assertEquals("Mandatory information missing!", exception.getMessage());
 >
->   }
->   @Test
->   void  multipleConcitionTestV2(){
->       assertDoesNotThrow(()->{
->          SILab2.function(new User("Predrag","Mitkov12345","predrag_mitkov@gmail.com"),new ArrayList<>());
->       });
->   }
+>    }
+>    @Test
+>    void  multipleConcitionTestV2(){
+>        assertDoesNotThrow(()->{
+>            SILab2.function(new User("Predrag","Mitkov12345","predrag_mitkov@gmail.com"),new ArrayList<>());
+>        });
+>    }
+>
+>    @Test
+>    void multipleConcitionTestV3(){
+>        RuntimeException exception=assertThrows(RuntimeException.class, ()->{
+>            SILab2.function(new User("Predrag",null,"predrag_mitkov@gmail.com"),new ArrayList<>());
+>        });
+>        assertEquals("Mandatory information missing!", exception.getMessage());
+>    }
+>    @Test
+>    void  multipleConcitionTestV4(){
+>        RuntimeException exception=assertThrows(RuntimeException.class, ()->{
+>            SILab2.function(new User("Predrag","Mitkov12345",null),new ArrayList<>());
+>        });
+>        assertEquals("Mandatory information missing!", exception.getMessage());
+>    }
 > ````
 
 <hr></hr>
