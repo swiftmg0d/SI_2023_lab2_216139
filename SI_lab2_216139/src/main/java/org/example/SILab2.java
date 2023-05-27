@@ -55,7 +55,7 @@ public class SILab2 {
                     same += 1; // 14
                 }
             } // 15
-        }
+            }
 
         String specialCharacters="!#$%&'()*+,-./:;<=>?@[]^_`{|}";  // 16
         String password = user.getPassword();  // 17
